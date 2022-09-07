@@ -28,12 +28,6 @@ Install dependencies
   yarn
 ```
 
-Init tailwind
-
-```bash
-  yarn tailwindcss init
-```
-
 Create .env files in route directories
 
 ```bash

@@ -2,6 +2,14 @@
   "name": "daaps-nft-list",
   "version": "0.1.0",
   "private": true,
+  "keywords": [
+    "daaps",
+    "moralis",
+    "web3modal",
+    "nft",
+    "ethers",
+    "daaps-nft"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
