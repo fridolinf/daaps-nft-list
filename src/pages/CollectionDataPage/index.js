@@ -47,10 +47,7 @@ const CollectionDataPage = () => {
       </div>
       <ul className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
         {collectionData.map(({ meta, token_address }) => (
-          <li
-            key={meta.tokenAddress ? meta.tokenAddress : token_address}
-            className="relative mt-5"
-          >
+          <li key={meta.id ? meta.id : token_address} className="relative mt-5">
             <div className="group aspect-w-10 aspect-h-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
                 src={

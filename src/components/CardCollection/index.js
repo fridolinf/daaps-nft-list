@@ -46,9 +46,10 @@ export default function CardCollection({ chainId }) {
                   }}
                   onClick={() => goToCollectionDataPage(file.token_address)}
                 >
-                  <span className="font-bold outline p-1 text-white">
+                  <p className="font-bold outline p-1 text-white">
                     {file.name}
-                  </span>
+                  </p>
+                  <p className="italic text-white">{file.contract_type}</p>
                 </button>
               </div>
               <p className="pointer-events-none block text-sm font-medium text-gray-400">
