@@ -12,7 +12,7 @@ and connect wallet using ( https://www.npmjs.com/package/web3modal )
 
 ## 🌏 Demo
 
-(soon)
+https://cerulean-rolypoly-b5b1a4.netlify.app/
 
 ## 💻 Run Locally
 
