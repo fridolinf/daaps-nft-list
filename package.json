@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "CI= yarn run build",
+    "build": "CI= npm run build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
