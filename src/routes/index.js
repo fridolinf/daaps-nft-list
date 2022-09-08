@@ -5,6 +5,7 @@ import ConnectPage from "pages/ConnectPage";
 import RouteChecker from "./routeChecker";
 import NftListPage from "pages/NftListPage";
 import NotFound from "pages/NotFoundPage";
+import CollectionDataPage from "pages/CollectionDataPage";
 
 function MainRoute() {
   return (
@@ -12,6 +13,7 @@ function MainRoute() {
       <Routes>
         <Route path="/" element={<ConnectPage />} />
         <Route path="/nftpage" element={<NftListPage />} />
+        <Route path="/data-collection" element={<CollectionDataPage />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/404" element={<NotFound />} />
       </Routes>

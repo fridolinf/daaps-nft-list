@@ -1,0 +1,16 @@
+export const tabsHeader = [
+  { name: "Eth", chain: "Ox1", current: 0 },
+  { name: "Rinkeby", chain: "0x4", current: 1 },
+  { name: "Goerli", chain: "0x5", current: 2 },
+  { name: "Ropsten", chain: "0x3", current: 3 },
+  { name: "Kovan", chain: "0x2A", current: 4 },
+  { name: "Polygon", chain: "0x89", current: 5 },
+  { name: "Mumbai", chain: "0x13881", current: 6 },
+  { name: "Bsc", chain: "0x38", current: 7 },
+  { name: "Bsc testnet", chain: "0x61", current: 8 },
+  { name: "Avalanche", chain: "0xA86A", current: 9 },
+  { name: "Avalanche testnet", chain: "0xA869", current: 10 },
+  { name: "Fantom", chain: "0xFA", current: 11 },
+  { name: "Cronos", chain: "0x19", current: 12 },
+  { name: "Cronos testnet", chain: "0x152", current: 13 },
+];

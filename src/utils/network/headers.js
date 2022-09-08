@@ -1,5 +1,4 @@
-// import { REACT_APP_MORALIS_API_KEY } from "utils/envs";
-const { REACT_APP_MORALIS_API_KEY } = process.env;
+import { REACT_APP_MORALIS_API_KEY } from "utils/envs";
 export function Header() {
   return {
     headers: {

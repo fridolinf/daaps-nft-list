@@ -5,40 +5,33 @@ import * as services from "utils/network/services";
 import API_BASE_URL from "api/baseUrl";
 import Moralis from "moralis";
 class MoralisController {
-  appId;
-
-  serverUrl;
-
-  isReady = false;
-
   constructor() {
-    this.appId = process.env.VUE_APP_MORALIS_APP_ID;
-    this.serverUrl = process.env.VUE_APP_MORALIS_SERVER_URL;
-    this.isReady = false;
-
     console.info("Starting moralisController");
   }
 
-  // async init() {
-  //   try {
-  //     await Moralis.start({
-  //       appId: this.appId,
-  //       serverUrl: this.serverUrl,
-  //     });
-  //   } catch (error) {
-  //     console.error(error, "@errorInitMoralisController");
-  //   }
-  // }
-
-  async getNftCollectionByAddress(address) {
+  async getNftCollectionByAddress(address, chains) {
     try {
       const request = await services.GET(
-        `${API_BASE_URL}${address}${ENDPOINT.getCollectionByAddress}`,
+        `${API_BASE_URL}${address}${ENDPOINT.getCollectionByAddress}?chain=${chains}&limit=20`,
         Header()
       );
       if (request.status === 200) {
         const { data } = request;
-        console.log(data);
+        return data.result;
+      }
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  }
+  async getDataCollection(wallet_address, token_address, chain) {
+    try {
+      const request = await services.GET(
+        `${API_BASE_URL}${wallet_address}${ENDPOINT.getCollectionData}${token_address}?chain=${chain}&limit=20`,
+        Header()
+      );
+      if (request.status === 200) {
+        const { data } = request;
+        return data.result;
       }
     } catch (error) {
       throw new Error(error.message);
