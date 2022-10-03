@@ -64,7 +64,7 @@ export default function HeaderSection() {
                 className={classNames(
                   tab.current === activeTabIndex &&
                     "border-indigo-500 text-indigo-600 hover:text-gray-700 hover:border-gray-300",
-                  "whitespace-nowrap pb-4 px-1 border-b-2 font-medium text-sm"
+                  "whitespace-nowrap pb-4 px-1 border-b-2 font-medium text-sm cursor-pointer"
                 )}
               >
                 {tab.name}
